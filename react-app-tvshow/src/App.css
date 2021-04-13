@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  background: rgb(208, 164, 42);
+  background: linear-gradient(180deg, rgb(15, 15, 13) 4%, rgb(15, 15, 15) 91%);
+  width: 100%;
+  margin-bottom: 50px;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.popular-text {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  background-color: #c40804;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+}
+.cards-container {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  background-color: #f8ede2;
+  -webkit-box-shadow: 0px 0px 71px -32px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 71px -32px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 71px -32px rgba(255, 255, 255, 1);
+  margin-bottom: 50px;
+}
+.popular-card {
+  border-left: 1px solid #c40804;
+}
+.popular-card:first-child {
+  border-left: none;
+}
+.cards {
+  display: flex;
+  text-align: center;
+}
+.cards img {
+  width: 250px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.card-content h1 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+  height: 50px;
+}
+.card-content p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+.cards-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+.cards-container::-webkit-scrollbar {
+  width: 10px;
+}
+.cards-container::-webkit-scrollbar-thumb {
+  background-color: #ff8000;
+}
+.btn-trailer {
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  background: rgb(220, 52, 4);
+  background: linear-gradient(
+    83deg,
+    rgba(220, 52, 4, 1) 22%,
+    rgba(250, 124, 4, 1) 81%
+  );
+  transition: all 0.3s ease-in;
+}
+.btn-trailer:hover {
+  background: rgb(220, 52, 4);
+  background: linear-gradient(
+    83deg,
+    rgba(220, 52, 4, 1) 22%,
+    rgba(250, 124, 4, 1) 81%
+  );
+  color: black;
+}
+
+.center-results {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.result-text {
+  font-weight: 200;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .popular-text {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    background-color: #c40804;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .center-results {
+    font-size: 0.8rem;
+  }
+}
